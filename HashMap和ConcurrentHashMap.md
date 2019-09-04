@@ -73,6 +73,7 @@ public V put(K key, V value) {
  
     modCount++;
     // 4. 不存在重复的 key，将此 entry 添加到链表中，细节后面说
+    //数组存储的是链表的第一个元素，所以相当于添加到链表中
     addEntry(hash, key, value, i);
     return null;
 }
