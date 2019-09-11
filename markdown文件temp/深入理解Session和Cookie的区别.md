@@ -42,11 +42,39 @@ Cookie就是这样的一种机制。它可以弥补**HTTP协议无状态**的不
 一个cookie的设置以及发送过程分为以下四步：
 
 1. **客户端发送一个http请求到服务器端**
+
 2. **服务器端发送一个http响应到客户端，其中包含Set-Cookie头部**
+
 3. **客户端发送一个http请求到服务器端，其中包含Cookie头部**
+
 4. **服务器端发送一个http响应到客户端**
 
-   ![img](C:\Users\n\Desktop\assets\v2-ad05c5fa4ff99375d4cc109806faa5d5_hd.jpg)
+   #### Cookie的操作：
+   
+   - 添加Cookie
+   
+   	```cpp
+   	  Cookie cookie = new Cookie("user", "suntao");
+   	  cookie.setMaxAge(7*24*60*60);     // 一星期有效
+   	  response.addCookie(cookie);
+   	```
+   
+   - 获取Cookie
+   
+   	```csharp
+   	  // 因为取得的是整个网页作用域的Cookie的值，所以得到的是个数组
+   	  Cookie[] cookies = request.getCookies();
+   	
+   	  for(int i = 0 ; i < cookies.length ; i++){
+   	   String name = cookies[i].getName() ;
+   	    String value = cookies[i].getValue() ;
+   	   }    
+   	```
+   
+   > cookie的存活期：默认为-1
+   > 会话Cookie：把Cookie保存到浏览器上，当存活期为负数
+   > 持久Cookie：把Cookie保存到文件中，当存活期为正数
+   > 设置存活期：c.setMaxAge();
 
 在客户端的第二次请求中包含Cookie头部，提供给了服务器端可以用来唯一标识客户端身份的信息。 这时，服务器端也就可以判断客户端是否启用了cookie。 尽管，用户可能在和应用程序交互的过程中突然禁用cookie的使用， 但是，这个情况基本是不太可能发生的，所以可以不加以考虑，这在实践中也被证明是对的。
 
