@@ -20,7 +20,7 @@ Cookie技术是**客户端的解决方案**，Cookie就是由**服务器发给�
 
 3. 客户端浏览器接收到来自服务器的响应之后，浏览器会将这些信息存放在一个统一的位置。 对于Windows操作系统而言，我们可以从： [系统盘]:\Documents and Settings[用户名]\Cookies目录中找到存储的Cookie；
 
-4. **客户端再次向服务器发送请求**的时候，都会把相应的Cookie再次发回至服务器。 而这次，Cookie信息则存放在HTTP请求头(**equest Header**)了。
+4. **客户端再次向服务器发送请求**的时候，都会把相应的Cookie再次发回至服务器。 而这次，Cookie信息则存放在HTTP请求头(**request Header**)了。
 
    ### HTTP的Cookie机制
 
