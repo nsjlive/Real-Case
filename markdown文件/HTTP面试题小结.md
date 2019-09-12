@@ -77,7 +77,7 @@
 
 HTTP请求报文由请求行、请求头、空行和请求内容4个部分构成。
 
-![å¾çè¯´æ](C:\Users\n\OneDrive - std.uestc.edu.cn\秋招\面经\Real-Case\markdown文件\assets\659657122_1568216479697_34C80DB83FD510D8709597B587454325)
+![å¾çè¯´æ](C:\Users\n\OneDrive - std.uestc.edu.cn\秋招\面经\Real-Case\markdown文件\assets\659657122_1568216479697_34C80DB83FD510D8709597B587454325as)
 
 **请求行：**
 由请求方法字段、URL字段、协议版本字段三部分构成，它们之间由空格隔开。常用的请求方法有：GET、POST、HEAD、PUT、DELETE、OPTIONS、TRACE、CONNECT。
