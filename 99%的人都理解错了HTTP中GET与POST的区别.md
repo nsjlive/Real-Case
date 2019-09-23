@@ -86,7 +86,7 @@ get和post的区别主要有以下几方面：
 
 > 这个也是最不好分析的，原则上post肯定要比get安全，毕竟传输参数时url不可见，但也挡不住部分人闲的没事在那抓包玩。安全性个人觉得是没多大区别的，防君子不防小人就是这个道理。对传递的参数进行加密，其实都一样。
 
-![img](C:\Users\n\OneDrive - std.uestc.edu.cn\秋招\面经\Real-Case\markdown文件\assets\webp)
+markdown文件/assets/webp
   
 
 ![img](C:\Users\n\OneDrive - std.uestc.edu.cn\秋招\面经\Real-Case\markdown文件\assets\webp1)
