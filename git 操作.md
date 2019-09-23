@@ -16,5 +16,7 @@ $ git pull origin master
 
 1）复制图片到asset 
 
-2)![image](图片相对路径)
+2)"![image](图片相对路径)"  
+（忽略引号）
+
 
