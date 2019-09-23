@@ -87,9 +87,9 @@ get和post的区别主要有以下几方面：
 > 这个也是最不好分析的，原则上post肯定要比get安全，毕竟传输参数时url不可见，但也挡不住部分人闲的没事在那抓包玩。安全性个人觉得是没多大区别的，防君子不防小人就是这个道理。对传递的参数进行加密，其实都一样。
 
 
-  https://upload-images.jianshu.io/upload_images/1234352-8525725b2feeda6c.png?imageMogr2/auto-orient/strip|imageView2/2/w/821/format/webp
+https://upload-images.jianshu.io/upload_images/1234352-8525725b2feeda6c.png?imageMogr2/auto-orient/strip|imageView2/2/w/821/format/webp
 
-https://upload-images.jianshu.io/upload_images/1234352-9edd6e5ab36db177.png?imageMogr2/auto-orient/strip|imageView2/2/w/836/format/webp
+
 
 get和post都能发送参数，但是利用get的话，对参数数据量有限制，因为参数只能是放在请求行的内容中。而post由于在体中，则没有数据量的限制。
 
